@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { GlobalMoviecontextProvider } from "./contexts/GlobalMovieContext";
+import "./styles.css"
+//component import
+import { TopNav } from "./components/TopNav";
+import { MainMovieList } from "./components/MainMovieList";
+import { Favorites } from "./components/Favorites";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalMoviecontextProvider>
+    <TopNav></TopNav>
+    <h3 className="MainListHeading">Movies</h3>
+    <MainMovieList></MainMovieList>
+    <h3 className="FavoriteListHeading">Favorites</h3>
+    <Favorites></Favorites>
+    </GlobalMoviecontextProvider>
   );
 }
 

@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #1A5653;
+    padding-left: 0.3em;
+}
+
+.MainListHeading, .FavoriteListHeading
+{
+margin-bottom: 0.2em;
+letter-spacing: 0.2em;
+}
+
+.TopNav
+{
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+    background-color: #08313A;
+}
+
+.TopNav .Logo-Container
+{
+    outline: 0.1em solid antiquewhite;
+    outline-offset: -0.1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.TopNav .Logo-Container:hover
+{
+    outline-offset: 0.1em;
+    box-shadow:  0 0 10px antiquewhite;
+}
+
+.TopNav img
+{
+    width: 9em;
+}
+
+.TopNav .searchBox
+{
+border: 0.1em solid rgba(255,255,255, 0.5);
+background-color: #08313A;
+outline: none;    
+padding: 0.4em;
+color: rgba(255,255,255, 0.9);
+font-size: 1em;
+transition: all 0.3s ease-in-out;
+}
+
+.TopNav .searchBox:focus
+{
+    box-shadow: 0 0 5px antiquewhite;
+}

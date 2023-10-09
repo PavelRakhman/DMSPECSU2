@@ -1,0 +1,42 @@
+.MediaElement
+{
+    display: grid;
+    grid-template-rows:min-content;
+    gap: var(--size-3);
+    padding: var(--size-3);
+    background:#08313A;
+    border: 0.1em solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-2);
+}
+
+.MediaElement > img
+{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    box-shadow: var(--shadow-2); 
+    outline: 0.1em solid rgba(255, 255, 255, 0.5);
+    outline-offset: 0.3em;   
+    
+}
+
+.AddToFavourites, .RemoveFromFavourites
+{
+   font-size: 1rem;
+   border: 0.1em solid rgba(255, 255, 255, 0.5);
+   padding: 0.2em;
+   background-color: #08313A;
+   transition: all 0.2s ease-in;
+}
+
+.AddToFavourites:hover
+{
+    background-color: #1A5653;
+}
+
+.MovieTitle, .MovieYear
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+ 
